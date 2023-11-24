@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  body {
+    font-family:'Poppins', 'Montserrat', sans-serif;
+    background-color:var(--bg-color) ;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0.000005em;  /* adjust the width of the scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: transparent;  /* set the background color of the track */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent;  /* set the color of the thumb */
+  }
+  
+  :root {
+    --bisque: bisque;
+    --brown: brown;
+    --bg-color: rgb(247, 227, 215);
+    --dark-brown:rgb(59, 16, 16);
+    --white:white;
+  }
+  
+  .container {
+    max-width: 90rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: auto;
+  }
+  
+  
+  main {
+    margin-top: 9rem;
+  }
+
+/*-------------------------CONTACTS----------------------------------------*/
+
+.contacts {
+    margin-bottom: 1.5rem;
+}
+
+.contacts-descr {
+    display: flex;
+    gap: 5rem;
+}
+
+.contacts-descr__info {
+    width: 50%;
+    font-size: 1.5rem;
+    color: var(--dark-brown);
+}
+
+.contacts-head {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--brown);
+    margin-bottom: 1rem;
+}
+
+.contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contacts-list__item {
+    padding: 1rem;
+    border: 0.125rem solid var(--brown);
+    width: 20%;
+}
+
+/*------------MEDIA------------*/
+
+@media (max-width:58.125rem) {
+  .contacts-descr__info {
+    display: none;
+  }
+
+  .contacts-list__item {
+    width: 40%;
+  }
+}
+
+@media (max-width:48.9rem) {
+
+
+
+  .contacts-list__item {
+    width: 80%;
+  }
+}
+

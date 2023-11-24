@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+     <!------------------FONTS------------------->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <!------------------STYLES-------------->
+     <link rel="stylesheet" href="./styles/store.css">
+     <link rel="stylesheet" href="./styles/head-foot.css">
+</head>
+<body>
+    <header class="header-fixed">
+        <a href="./home.html" class="header-logo"><img src="https://i.ibb.co/yBHSYM0/bon-logo-dark.png" alt="bon-logo"></a>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="./about.html" class="nav-item_link">About us</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./menu.html" class="nav-item_link">Menu</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./contacts.html" class="nav-item_link">Contacts</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./career.html" class="nav-item_link">Career</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./store.html" class="nav-item_link">Bon! Store</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header-nav-bottom">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="./about.html" class="nav-item_link">About us</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./menu.html" class="nav-item_link">Menu</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./contacts.html" class="nav-item_link">Contacts</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./career.html" class="nav-item_link">Career</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./store.html" class="nav-item_link">Bon! Store</a>
+            </li>
+          </ul>
+        </nav>
+</header>
+<main>
+    <section class="store">
+        <div class="container">
+            <h2 class="store-head">Bon! Store</h2>
+            <div class="shop-wrapper">
+                <div class="shop">
+                    <div class="shop-item all">
+                        <h2 class="shop-item__head">All</h2>
+                        <span class="shop-item__num">9</span>
+                    </div>
+                    <div class="shop-item ice">
+                        <h2 class="shop-item__head">Ice-cream</h2>
+                        <span class="shop-item__num">3</span>
+                    </div>
+                    <div class="shop-item bakery">
+                        <h2 class="shop-item__head">Bakery</h2>
+                        <span class="shop-item__num">3</span>
+                    </div>
+                    <div class="shop-item chocolate">
+                        <h2 class="shop-item__head">Chocolate</h2>
+                        <span class="shop-item__num">3</span>
+                    </div>
+                </div>
+                <div class="products-container">
+                    <div class="shop-card" data-cat="ice">
+                        <h3 class="card-head">Ice Cream</h3>
+                        <span class="card-descr">Strawberry</span>
+                        <div class="card-pic">
+                            <img src="https://i.ibb.co/6rJ0y75/1.jpg" alt="Strawberry Ice-cream">
+                        </div>
+                        <div class="cta">
+                            <span class="price">15.000sum</span>
+                            <button class="cart-btn" type="button" onclick="handleAdd(event)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-card" data-cat="ice">
+                        <h3 class="card-head">Ice Cream</h3>
+                        <span class="card-descr">Bizcocho</span>
+                        <div class="card-pic">
+                            <img src="https://i.ibb.co/K08F0fb/image.jpg" alt="Bizcocho Ice-cream">
+                        </div>
+                        <div class="cta">
+                            <span class="price">15.000sum</span>
+                            <button class="cart-btn" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-card" data-cat="ice">
+                        <h3 class="card-head">Ice Cream</h3>
+                        <span class="card-descr">Vanilla</span>
+                        <div class="card-pic">
+                            <img src="https://i.ibb.co/JnQygXn/images.jpg" alt="Vanilla Ice-cream">
+                        </div>
+                        <div class="cta">
+                            <span class="price">15.000sum</span>
+                            <button class="cart-btn" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-card" data-cat="ice">
+                        <h3 class="card-head">Ice Cream</h3>
+                        <span class="card-descr">Chocolate</span>
+                        <div class="card-pic">
+                            <img src="https://i.ibb.co/b6MBB5X/images-1.jpg" alt="Vanilla Ice-cream">
+                        </div>
+                        <div class="cta">
+                            <span class="price">15.000sum</span>
+                            <button class="cart-btn" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-card" data-cat="chocolate">
+                        <h3 class="card-head">Chocolate</h3>
+                        <span class="card-descr">Milk</span>
+                        <div class="card-pic">
+                            <img src="https://i.ibb.co/wgNxy1p/0976590.jpg" alt="Vanilla Ice-cream">
+                        </div>
+                        <div class="cta">
+                            <span class="price">15.000sum</span>
+                            <button class="cart-btn" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-card" data-cat="chocolate">
+                        <h3 class="card-head">Chocolate</h3>
+                        <span class="card-descr">Dark</span>
+                        <div class="card-pic">
+                            <img src="https://i.ibb.co/wgNxy1p/0976590.jpg" alt="Vanilla Ice-cream">
+                        </div>
+                        <div class="cta">
+                            <span class="price">15.000sum</span>
+                            <button class="cart-btn" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-card" data-cat="chocolate">
+                        <h3 class="card-head">Choco Balls</h3>
+                        <span class="card-descr">Milk Chocolate with Hazelnuts</span>
+                        <div class="card-pic">
+                            <img src="https://i.ibb.co/D4Qywfj/M-height.jpg" alt="Vanilla Ice-cream">
+                        </div>
+                        <div class="cta">
+                            <span class="price">15.000sum</span>
+                            <button class="cart-btn" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-card" data-cat="bakery">
+                        <h3 class="card-head">Baguette</h3>
+                        <span class="card-descr">French Bread</span>
+                        <div class="card-pic">
+                            <img src="https://i.ibb.co/VWvgHtV/2.jpg" alt="Vanilla Ice-cream">
+                        </div>
+                        <div class="cta">
+                            <span class="price">15.000sum</span>
+                            <button class="cart-btn" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-card" data-cat="bakery">
+                        <h3 class="card-head">Prezel</h3>
+                        <span class="card-descr">Bakery</span>
+                        <div class="card-pic">
+                            <img src="https://i.ibb.co/25mttZx/3.jpg" alt="Vanilla Ice-cream">
+                        </div>
+                        <div class="cta">
+                            <span class="price">15.000sum</span>
+                            <button class="cart-btn" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-card" data-cat="bakery">
+                        <h3 class="card-head">Bread</h3>
+                        <span class="card-descr">Bread</span>
+                        <div class="card-pic">
+                            <img src="https://i.ibb.co/gMd8dbf/4.jpg" alt="Vanilla Ice-cream">
+                        </div>
+                        <div class="cta">
+                            <span class="price">15.000sum</span>
+                            <button class="cart-btn" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-descr">
+        <div class="footer-about">
+          <h3>About</h3>
+          <p>
+            The café offers a charming French and European kitchen, serving a fusion of traditional French dishes and European cuisine. With a cozy ambiance and delightful accents, it creates the perfect atmosphere for enjoying a leisurely meal or a quick bite. From delicate croissants and freshly brewed coffee to hearty coq au vin and creamy tarte tatin, the menu satisfies any palate. Experience the flavors of Parisian elegance and unique European culinary delights all in one place.
+  </p>
+</div>
+        <div class="footer-nav">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./contacts.html">Contacts</a></li>
+            <li><a href="./career.html">Career</a></li>
+            <li><a href="./store.html">Bon! Store</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+          <p class="footer-rights">Copyright &copy; 2009 All Rights Reserved by
+       <a href="#">Bon!</a>.
+          </p>
+        <div class="footer-media">
+          <ul class="media-list">
+            <li class="media-list__item">
+              <a href="https://www.instagram.com/boncafe.uz/" class="media-links"><img src="https://i.ibb.co/gJPZkJ9/insta-logo.jpg" alt="Instagram"></a>
+            </li>
+            <li class="media-list__item">
+              <a href="https://www.facebook.com/boncafe/?locale=ru_RU" class="media-links"><img src="https://i.ibb.co/mycGn60/facebook-logo.jpg" alt="Facebook"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+<script src="./scripts/main.js">
+</script>
+</body>
+</html>

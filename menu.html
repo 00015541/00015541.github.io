@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+     <!------------------FONTS------------------->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <!------------------STYLES-------------->
+     <link rel="stylesheet" href="./styles/menu.css">
+     <link rel="stylesheet" href="./styles/head-foot.css">
+</head>
+<body>
+    <header class="header-fixed">
+        <a href="./home.html" class="header-logo"><img src="https://i.ibb.co/yBHSYM0/bon-logo-dark.png" alt="bon-logo"></a>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="./about.html" class="nav-item_link">About us</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./menu.html" class="nav-item_link">Menu</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./contacts.html" class="nav-item_link">Contacts</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./career.html" class="nav-item_link">Career</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./store.html" class="nav-item_link">Bon! Store</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header-nav-bottom">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="./about.html" class="nav-item_link">About us</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./menu.html" class="nav-item_link">Menu</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./contacts.html" class="nav-item_link">Contacts</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./career.html" class="nav-item_link">Career</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./store.html" class="nav-item_link">Bon! Store</a>
+            </li>
+          </ul>
+        </nav>
+</header>
+<main>
+  <div class="container">
+    <nav class="navigation">
+        <ul>
+            <li data-category="all" class="active navigation-item">All</li>
+            <li data-category="breakfast" class="navigation-item">Breakfast</li>
+            <li data-category="salads" class="navigation-item">Salads</li>
+            <li data-category="dinner" class="navigation-item">Dinner</li>
+            <li data-category="desserts" class="navigation-item">Desserts</li>
+            <li data-category="drinks" class="navigation-item">Drinks</li>
+        </ul>
+    </nav>
+    <div class="menu">
+    </div>
+</div>
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Название Блюда</h2>
+    </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-descr">
+      <div class="footer-about">
+        <h3>About</h3>
+        <p>
+          The café offers a charming French and European kitchen, serving a fusion of traditional French dishes and European cuisine. With a cozy ambiance and delightful accents, it creates the perfect atmosphere for enjoying a leisurely meal or a quick bite. From delicate croissants and freshly brewed coffee to hearty coq au vin and creamy tarte tatin, the menu satisfies any palate. Experience the flavors of Parisian elegance and unique European culinary delights all in one place.
+</p>
+</div>
+      <div class="footer-nav">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./contacts.html">Contacts</a></li>
+          <li><a href="./career.html">Career</a></li>
+          <li><a href="./store.html">Bon! Store</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+        <p class="footer-rights">Copyright &copy; 2009 All Rights Reserved by
+     <a href="#">Bon!</a>.
+        </p>
+      <div class="footer-media">
+        <ul class="media-list">
+          <li class="media-list__item">
+            <a href="https://www.instagram.com/boncafe.uz/" class="media-links"><img src="https://i.ibb.co/gJPZkJ9/insta-logo.jpg" alt="Instagram"></a>
+          </li>
+          <li class="media-list__item">
+            <a href="https://www.facebook.com/boncafe/?locale=ru_RU" class="media-links"><img src="https://i.ibb.co/mycGn60/facebook-logo.jpg" alt="Facebook"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="./scripts/menu.js"></script>
+</body>
+</html>

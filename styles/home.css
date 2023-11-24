@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:'Poppins', 'Montserrat', sans-serif;
+  background-color:var(--bg-color) ;
+}
+
+body::-webkit-scrollbar {
+  width: 0.000005em;  /* adjust the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;  /* set the background color of the track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;  /* set the color of the thumb */
+}
+
+:root {
+  --container: 1110px;
+  --bisque: bisque;
+  --brown: brown;
+  --bg-color: rgb(247, 227, 215);
+  --dark-brown:rgb(59, 16, 16);
+  --white:white;
+}
+
+.container {
+  max-width: 90rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin: auto;
+}
+
+
+main {
+  margin-top: 9rem;
+}
+
+
+/*----------------------------------HERO-------------------------------*/
+
+.hero .container {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.video-background {
+  position: relative;
+  height: 55vh;
+  overflow: hidden;
+  border-radius: 3rem;
+  width: 50%;
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-info {
+  position: relative;
+  z-index: 1;
+  font-size: 5.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-info span {
+  font-size: 7rem;
+}
+
+.hero-descr {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-descr__head {
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--dark-brown);
+}
+
+.hero-descr__info {
+  font-size: 1.2rem;
+  line-height: normal;
+  font-weight: 400;
+}
+
+/*--------------------SALES SECTION-----------------*/
+.sales-section {
+  padding: 3.75rem 3.125rem;
+}
+.sales-section .sales-carousel {
+  margin: 0.9rem 0;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.sales-head {
+  font-size: 3rem;
+  color: var(--dark-brown);
+}
+
+.sales-section .sales-item {
+  margin: 0 0.9rem 3.75rem;
+  width: 20rem;
+  height: 25rem;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.sales-section .sales-item:first-child {
+  background-image: url(https://i.ibb.co/njND9qX/sales-teacher.jpg);
+}
+
+.sales-section .sales-item:nth-child(2) {
+  background-image: url(https://i.ibb.co/6ZWs8Wz/sales-coffee.jpg)
+}
+
+.sales-section .sales-item:nth-child(3) {
+  background-image: url(https://i.ibb.co/9bh0HSy/sales-easter.jpg);
+}
+
+.sales-section .sales-item:last-child {
+  background-image: url(https://i.ibb.co/9nytkj6/sales-ny-advent.jpg);
+}
+
+.sales-section .sales-item.active {
+  width: 31.25rem;
+  box-shadow: 0.75rem 2.5rem 2.5rem rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0.75rem 2.5rem 2.5rem rgba(0, 0, 0, 0.25);
+  height: 31.25rem;
+}
+.sales-section .sales-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.sales-section .sales-item__desc {
+  padding: 0 1.5rem 0.75rem;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 3.375rem));
+  -webkit-transform: translateY(calc(100% - 3.375rem));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.sales-section .sales-item.active .sales-item__desc {
+  transform: none;
+  -webkit-transform: none;
+}
+.sales-section .sales-item__desc p {
+  opacity: 0;
+  -webkit-transform: translateY(2rem);
+  transform: translateY(2rem);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+.sales-section .sales-item.active .sales-item__desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.sales-section .owl-theme.sales-carousel .owl-dots {
+  margin-top: -1.25rem;
+  position: relative;
+  z-index: 5;
+}
+
+.sales-carousel {
+  display: flex;
+}
+
+
+
+/*--------------------MEDIA----------------------------*/
+
+@media (max-width: 68.75rem) {
+
+  main {
+    margin-top: 8rem;
+  }
+
+  .nav-item_link {
+    font-size: 1.2rem;
+  }
+
+  .hero .container {
+    flex-direction: column-reverse;
+  }
+
+  .hero-descr {
+    max-width: 100%;
+  }
+
+  .video-background {
+    width: 100%;
+  }
+
+  .hero-descr__head {
+    font-size: 3rem;
+  }
+    
+}
+
+
+
+@media (min-width: 62rem) and (max-width: 74.9rem) {
+  
+/* -------- Landing page ------- */
+.sales-section {
+  padding: 3.125rem 1.875rem;
+}
+
+.sales-section .sales-item {
+  margin: 0 0.75rem 3.75rem;
+  width: 16.25rem;
+  height: 18.75rem;
+}
+.sales-section .sales-item.active {
+  width: 25rem;
+}
+.sales-section .sales-item__desc {
+  transform: translateY(calc(100% - 2.875rem));
+  -webkit-transform: translateY(calc(100% - 2.875rem));
+}
+}
+
+@media (min-width: 48rem) and (max-width: 61.9) {
+
+.sales-head {
+  width: 20.625rem;
+}
+
+/* -------- Landing page ------- */
+.sales-section {
+  padding: 3.125rem 1.875rem 2.5rem;
+}
+.sales-section .sales-item {
+  margin: 0 0.75rem 3.75rem;
+  width: 15rem;
+  height: 20rem;
+}
+.sales-section .sales-item.active {
+  width: 22.5rem;
+}
+.sales-section .sales-item__desc {
+  transform: translateY(calc(100% - 2.625rem));
+  -webkit-transform: translateY(calc(100% - 2.625rem));
+}
+}
+
+@media (max-width: 47.9rem) {
+body {
+  font-size: 0.9rem;
+  margin-bottom: 4.3rem;
+}
+
+.sales-head {
+  width: 15.625rem;
+}
+
+.sales-carousel {
+  flex-direction: column;
+}
+
+/* -------- Landing page ------- */
+.sales-section {
+  padding: 1.875rem 0.9rem 1.25rem;
+}
+.sales-section .sales-item {
+  margin: 0 0.625rem 2.5rem;
+  width: 80%;
+  height: 17.5rem;
+}
+.sales-section .sales-item.active {
+  width: 100%;
+  box-shadow: 0.375rem 0.625rem 0.625rem rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0.375rem 0.625rem 0.625rem rgba(0, 0, 0, 0.25);
+}
+.sales-section .sales-item__desc {
+  padding: 0 0.875rem 0.3rem;
+  transform: translateY(calc(100% - 2.625rem));
+  -webkit-transform: translateY(calc(100% - 2.625rem));
+}
+
+}
+
+

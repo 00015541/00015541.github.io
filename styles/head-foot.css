@@ -1,0 +1,266 @@
+
+:root {
+    --bisque: bisque;
+    --brown: brown;
+    --bg-color: rgb(247, 227, 215);
+    --dark-brown:rgb(59, 16, 16);
+    --white:white;
+  }
+
+/*--------------HEADER--------*/
+.header-fixed {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:  var(--bisque);
+  z-index: 9999;
+  padding: 0.625rem 0.5rem;
+  border-radius: 0 0 3rem 2rem ;
+  -webkit-box-shadow: 0.06rem 0.25rem 0.5rem 0 rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0.06rem 0.25rem 0.5rem 0 rgba(34, 60, 80, 0.2);
+box-shadow: 0.06rem 0.25rem 0.5rem 0 rgba(34, 60, 80, 0.2);
+}
+
+.header-logo img {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+
+.header-logo {
+  margin-right: 50%;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-item_link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--brown);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item_link:hover {
+  outline: 0.06rem solid var(--brown);
+  padding: 0.05rem;
+}
+
+.nav-item_link:focus {
+  background-color: var(--brown);
+  color: var(--bisque);
+}
+
+.nav-item_link:active {
+  background-color: var(--brown);
+  color: var(--bisque);
+}
+
+.header-nav-bottom {
+  display: none;
+}
+
+/*-------------------------FOOTER-----------------------*/
+
+.footer-descr {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+
+.site-footer
+{
+  background-color:var(--dark-brown);
+  padding:2.8rem 0 1.25rem;
+  font-size:0.9rem;
+  line-height:1.5rem;
+  color:var(--bisque);
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:1.25rem 0
+}
+.site-footer h3
+{
+  color:#fff;
+  font-size:1rem;
+  text-transform:uppercase;
+  margin-top:0.3rem;
+}
+.site-footer a
+{
+  color:var(--bg-color);
+}
+.site-footer a:hover
+{
+  color:var(--white);
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:var(--bisque)
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:var(--bg-color);
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.footer-rights {
+  font-size: 1.5rem;
+}
+
+.footer-about {
+  max-width: 34%;
+}
+
+.media-list {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.media-links img {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.media-links:hover img {
+  border: 0.1rem solid var(--bg-color);
+  padding: 0.3rem;
+}
+
+.media-links:focus img {
+  border: 0.1rem solid var(--bg-color);
+  padding: 0.3rem;
+}
+
+.media-links:active img {
+  border: 0.1rem solid var(--bg-color);
+  padding: 0.3rem;
+}
+
+
+/*---------------MEDIA--------------*/
+
+@media (max-width: 74.9rem) {
+
+  .header-logo {
+    margin-right: 30%;
+  }
+
+  .nav-item_link {
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 47.9rem) {
+  .header-nav {
+    display: none;
+  }
+  
+  .header-nav-bottom {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:  var(--bisque);
+    z-index: 9999;
+    padding: 0.625rem 0.5rem;
+    -webkit-box-shadow: 0.06rem 0.25rem 0.5rem 0 rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0.06rem 0.25rem 0.5rem 0 rgba(34, 60, 80, 0.2);
+  box-shadow: 0.06rem 0.25rem 0.5rem 0 rgba(34, 60, 80, 0.2);
+  height: 3rem;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .nav-item_link {
+    font-size: 1.5rem;
+  }
+
+  .footer-about {
+    max-width: 50%;
+  }
+  
+  .footer-rights {
+    font-size: 1rem;
+  }
+  
+  .media-links img {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media (max-width:47.9rem)
+{
+
+  .site-footer
+  {
+    padding-bottom:0
+  }
+}
+
+@media (max-width: 36.875rem) {
+  .nav-item_link {
+    font-size: 1rem;
+  }
+
+  .nav-list {
+    gap: 5%;
+  }
+
+  .footer-about {
+    display: none;
+  }
+}
+
+@media (max-width: 35.9rem) {
+  .nav-item_link {
+    font-size: 0.8rem;
+  }
+
+}

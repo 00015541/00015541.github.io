@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  body {
+    font-family:'Poppins', 'Montserrat', sans-serif;
+    background-color:var(--bg-color) ;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0.000005em;  /* adjust the width of the scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: transparent;  /* set the background color of the track */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent;  /* set the color of the thumb */
+  }
+  
+  :root {
+    --bisque: bisque;
+    --brown: brown;
+    --bg-color: rgb(247, 227, 215);
+    --dark-brown:rgb(59, 16, 16);
+    --white:white;
+  }
+  
+  .container {
+    max-width: 90rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: auto;
+  }
+  
+  
+  main {
+    margin-top: 9rem;
+  }
+
+
+/*------------------------VACANCIES-----------------------------*/
+
+.vacancies {
+  margin-bottom: 3rem;
+}
+
+.vacancies-heading {
+  margin-bottom: 3rem;
+  color: var(--brown);
+  font-size: 4rem;
+  font-weight: 500; 
+  line-height: 3rem;
+}
+
+.vacancies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2rem;
+  list-style-type: none;
+}
+
+.vacancies-list__item {
+  width: 45%;
+  border: 0.19rem solid var(--brown);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.vacancy-head {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--dark-brown);
+}
+
+.vacancy-salary {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--dark-brown);
+}
+
+.vacancy-salary span {
+  font-weight: 700;
+}
+
+.vacancy-experience {
+  font-weight: 300;
+  color: var(--dark-brown);
+  margin-bottom: 1rem ;
+}
+
+.vacancy-experience span {
+  font-weight: 700;
+}
+
+.vacancy-btn, .form-btn {
+  padding: 0.5rem;
+  border: 0.06rem solid var(--dark-brown);
+  background-color: var(--bg-color);
+  font-size: 1rem;
+  border-radius: 0.625rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.vacancy-btn:hover {
+  font-size: 1.2rem;
+}
+
+.vacancy-btn:focus {
+  font-size: 1.2rem;
+  background-color: var(--dark-brown);
+  color: var(--bisque);
+}
+
+.vacancy-btn:active {
+  font-size: 1.2rem;
+  background-color: var(--dark-brown);
+  color: var(--bisque);
+}
+
+.form {
+  margin-bottom: 2rem;
+}
+
+.form .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-head {
+  margin-bottom: 3rem;
+  color: var(--brown);
+  font-size: 4rem;
+  font-weight: 500; 
+  line-height: 3rem;
+} 
+
+.form-container {
+  background-color: var(--brown);
+  padding: 1rem;
+  border-radius: 0.625rem;
+  width: 50%;
+}
+
+.form-input__container {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.form-input__container:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  color: var(--bisque);
+}
+
+.form-input {
+  padding: 0.5rem;
+  border-radius: 0.625rem;
+  background-color: var(--bisque);
+  border: 0.06rem solid var(--brown);
+  width: 100%;
+}
+
+@media (max-width:59.375rem) {
+  .form .container {
+    flex-direction: column;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+}
+
+@media (max-width:53.75rem) {
+  .vacancies-list__item {
+    width: 40%;
+  }
+
+  .vacancy-salary span {
+    font-size: 1rem;
+  }
+
+  .form .container {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width:43.4rem) {
+
+  .form-label {
+    font-size: 1rem;
+  }
+
+  .vacancies-heading, .form-head {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .vacancies-list__item {
+    width: 100%;
+  }
+
+  .vacancy-salary span {
+    font-size: 1.2rem;
+  }
+}
+  
