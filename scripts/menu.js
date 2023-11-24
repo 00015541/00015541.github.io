@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menu = [
+    const menu = [ //create elements of menu
         { category: 'breakfast', title: 'Omelette', price: '50 000 UZD.', imageUrl: 'https://i.ibb.co/TPjDPRY/omelette-3cba9f8.webp', description: 'Master the omelette with our simple recipe then add the filling of your choice – grated cheese, ham, fresh herbs, mushrooms and smoked salmon are favourites.' },
         { category: 'breakfast', title: 'English Breakfast', price: '50 000 UZD.', imageUrl: 'https://i.ibb.co/nCBVT3B/recipe-image-legacy-id-592533-12-67f5d3e.webp', description: 'Sometimes called a fry up, a full English is a hearty, hefty breakfast plate served in the UK and Ireland. Full English breakfasts are so popular that they’re pretty much offered throughout the day as all-day breakfast. Full English breakfasts contain: sausages, back bacon, eggs, tomatoes, mushrooms, fried bread, and beans.' },
         { category: 'salads', title: 'Epic Summer', price: '40 000 UZD.', imageUrl: 'https://i.ibb.co/nn7012R/epic-summer-salad-000aded.webp" alt="epic-summer-salad-000aded', description: 'Perfect for BBQs and buffets, our epic salad is an assembly job of gorgeous ingredients – no cooking required. Serve it with lamb kebabs for an impressive summer feast' },
@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuContainer = document.querySelector('.menu');
     const navItems = document.querySelectorAll('.navigation li');
 
+    //filtering function
     function filterMenu(category) {
         menuContainer.innerHTML = '';
         const filteredMenu = category === 'all' ? menu : menu.filter(item => item.category === category);
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             menuContainer.appendChild(card);
         });
     }
-
+ // adding event listener
     navItems.forEach(item => {
         item.addEventListener('click', () => {
             document.querySelector('.navigation .active').classList.remove('active');
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     filterMenu('all');
 });
-
+// show modal page
 function showModal(title, description) {
     const modal = document.getElementById('modal');
     const modalContent = modal.querySelector('.modal-content');

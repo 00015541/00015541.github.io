@@ -1,3 +1,5 @@
+
+// function for sales section on the home page
 window.onload = function () {
   const customCarousel = document.querySelector(".sales-carousel");
   const items = customCarousel.querySelectorAll(".sales-item");
@@ -13,7 +15,7 @@ window.onload = function () {
     });
   }
 };
-
+// FAQ section
 const toggles = document.querySelectorAll('.faq-btn');
 
 toggles.forEach(toggle => {
@@ -21,7 +23,7 @@ toggles.forEach(toggle => {
     toggle.parentNode.classList.toggle('active');
   });
 });
-
+// Upload files in the form
 var selDiv = "";
   var storedFiles = []; //store the object of the all files
 
@@ -61,6 +63,8 @@ var selDiv = "";
      //store the array of file in our element this is send to other page by form submit
      $("input[name=replyfiles]").val(storedFiles);
 }
+
+// filter in the store
 
 document.querySelector('.ice').addEventListener('click', function (e) {
   var shopCards = document.querySelectorAll('.shop-card');
