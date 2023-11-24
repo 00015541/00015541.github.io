@@ -7,9 +7,6 @@
     --white:white;
   }
 
-  body {
-    margin-bottom: 5rem;
-  }
 
 /*--------------HEADER--------*/
 .header-fixed {
@@ -195,6 +192,11 @@ box-shadow: 0.06rem 0.25rem 0.5rem 0 rgba(34, 60, 80, 0.2);
 
 
 @media (max-width: 47.9rem) {
+   
+  body {
+    margin-bottom: 3rem;
+  }
+
   .header-nav {
     display: none;
   }
