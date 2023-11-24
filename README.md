@@ -11,6 +11,5 @@ For this project, a website was created for the Bon cafe network!Bon is a chain 
 5.Career. Vacancies in Beaune are posted here and there is also a form to fill out for the job.
 <<<<<<< HEAD
 6. Shop. Various coffee shop products are published here.
-=======
-6. Shop. Various coffee shop products are published here.
+Link for the website: https://00015541.github.io/
 >>>>>>> 1d25b1f4c8ba77ea5427952ed3249eb121f769d4
