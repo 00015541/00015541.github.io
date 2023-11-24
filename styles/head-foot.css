@@ -7,6 +7,10 @@
     --white:white;
   }
 
+  body {
+    margin-bottom: 5rem;
+  }
+
 /*--------------HEADER--------*/
 .header-fixed {
   display: flex;
